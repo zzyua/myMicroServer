@@ -3,9 +3,7 @@ package com.zzy.micro.demos.startuoRunner;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.core.Ordered;
-import org.springframework.core.annotation.Order;
 
-import java.lang.annotation.Annotation;
 
 //@Order(2)
 
@@ -19,7 +17,7 @@ public class TaskRunner implements ApplicationRunner , Ordered {
 
 
     @Override
-    public void run(ApplicationArguments args) throws Exception {
+    public void run(ApplicationArguments args)  {
         System.out.println("TaskRunner'level is 2");
     }
 
